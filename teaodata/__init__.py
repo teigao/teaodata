@@ -4,7 +4,8 @@
 """
 Welcome to use teaodata. To get the document related to this package, 
 please go to https://github.com/teigao/teaodata
--- multiple_process: process large dataset with multiple processes.
+-- multiple_process function: process large dataset with multiple processes.
+-- sample_dataset module: provides functions to get sample datasets. 
 """
 
 __author__ = 'Teige Gao'
