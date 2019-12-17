@@ -1,4 +1,4 @@
-# teaodata
+# TEAODATA Document
 This is a data tooltip designed by Teige Gao. This tool will provides features to process bigdata, ETL. etc
 - <kbd>multiple_process()</kbd> function
 
