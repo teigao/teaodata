@@ -3,7 +3,6 @@
 
 """
 This module is used for getting sample dataset. 
-Before using this module, please configure the sample file folder.
 -- chipotle: This function will return a dataset of Chipotle orders. 
 """
 

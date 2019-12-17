@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-Welcome to use teaodata. To get the document related to this package, 
-please go to https://github.com/teigao/teaodata
+Welcome to use teaodata. This tool will provides features to process bigdata, ETL. etc
 -- multiple_process function: process large dataset with multiple processes.
 -- sample_dataset module: provides functions to get sample datasets. 
+For more information, please go to https://github.com/teigao/teaodata.
 """
 
 __author__ = 'Teige Gao'
