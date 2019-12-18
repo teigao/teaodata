@@ -2,7 +2,7 @@
 This is a data tooltip designed by Teige Gao. This tool will provides features to process bigdata, ETL. etc
 
 **This module is developed under Python 3.6.8, before using this module, please put the teaodata folder under %PYTHONPATH%\Lib\site-packages.**
-## <kbd>multiple_process()</kbd> function
+## ```multiple_process() ``` function
 
 >This function is used for multiple processings, one large dataset will be divided into multiple parts for processing. 
 
@@ -18,7 +18,7 @@ This function requires four parameters: dataset, task_workload, cpu_pool_size, f
 
 **Important: This function must be working under <kbd>if __name__ == '__main__':</kbd>, and we need to set a process parameter for the working function.**
     
-This function will return a queue of result, we will need to use <kbd>get()</kbd> function to get the result. 
+This function will return a queue of result, we will need to use ```get()``` function to get the result. 
 
 The result will be the result returned from the working function. Please refer to the following example:
 
