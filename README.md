@@ -62,5 +62,11 @@ if __name__ == '__main__': #must work under this
     2 | 2 | Chicken Bowl | [Tomatillo-Red Chili Salsa (Hot), [Black Beans, Rice, Cheese, Sour Cream]] | $16.98
 
         
-## address_seg module
+## add_reco module
+
+>This module is used to cut the address string into smaller part like zip code, address, department, organization.
+
+- ```wanfang()``` function
+
+    This function is used to cut the wanfang author info into smaller parts.
 
