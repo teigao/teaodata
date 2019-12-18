@@ -1,8 +1,8 @@
 # TEAODATA Document
 This is a data tooltip designed by Teige Gao. This tool will provides features to process bigdata, ETL. etc
 
-**This module is developed under Python 3.6.8, before using this module, please put the teaodata folder under %PYTHONPATH%\Lib\site-packages.**
-## ```multiple_process() ``` function
+    This module is developed under Python 3.6.8, before using this module, please put the teaodata folder under %PYTHONPATH%\Lib\site-packages.
+## multiple_process() function
 
 >This function is used for multiple processings, one large dataset will be divided into multiple parts for processing. 
 
@@ -16,7 +16,7 @@ This function requires four parameters: dataset, task_workload, cpu_pool_size, f
 
 - function_name: the function to handle the dataset.
 
-**Important: This function must be working under <kbd>if __name__ == '__main__':</kbd>, and we need to set a process parameter for the working function.**
+**Important: This function must be working under ```if __name__ == '__main__':```, and we need to set a process parameter for the working function.**
     
 This function will return a queue of result, we will need to use ```get()``` function to get the result. 
 
@@ -39,11 +39,11 @@ if __name__ == '__main__': #must work under this
         xx, xxx, xxxx = result.get()
         print(xx, xxx, xxxx) #need use get() to get the result from queue
 ```
-## <kbd>sample_dataset</kbd> module
+## sample_dataset module
 
 >This module provides multiple datasets for tesing and learning, the datasets are get from Internet and free to use.
 
-- <kbd>chipotle()</kbd> function
+- ```chipotle()``` function
 
     This function will return a dataset of Chipotle orders. It includes order_id, quantity, item_name, choice_description, item_price columns.
 
@@ -60,5 +60,5 @@ if __name__ == '__main__': #must work under this
     2 | 2 | Chicken Bowl | [Tomatillo-Red Chili Salsa (Hot), [Black Beans, Rice, Cheese, Sour Cream]] | $16.98
 
         
-## <kbd>address_seg</kbd> module
+## address_seg module
 
