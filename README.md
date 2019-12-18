@@ -1,7 +1,7 @@
 # TEAODATA Document
 This is a data tooltip designed by Teige Gao. This tool will provides features to process bigdata, ETL. etc
 
-    This module is developed under Python 3.6.8, before using this module, please put the teaodata folder under %PYTHONPATH%\Lib\site-packages.
+**This module is developed under Python 3.6.8, before using this module, please put the teaodata folder under %PYTHONPATH%\Lib\site-packages.**
 ## multiple_process() function
 
 >This function is used for multiple processings, one large dataset will be divided into multiple parts for processing. 
@@ -16,7 +16,7 @@ This function requires four parameters: dataset, task_workload, cpu_pool_size, f
 
 - function_name: the function to handle the dataset.
 
-**Important: This function must be working under ```if __name__ == '__main__':```, and we need to set a process parameter for the working function.**
+**Important: This function must be working under `if __name__ == '__main__':`, and we need to set a process parameter for the working function.**
     
 This function will return a queue of result, we will need to use ```get()``` function to get the result. 
 
