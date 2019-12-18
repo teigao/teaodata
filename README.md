@@ -1,5 +1,7 @@
-# TEAODATA Document
+# TEAODATA Data Tooltip Document
 This is a data tooltip designed by Teige Gao. This tool will provides features to process bigdata, ETL. etc
+
+We can download this module from <https://github.com/teigao/teaodata/blob/master/teaodata.7z>, then unzip this file and put the teaodata folder to the Python path. We can refer to the usage_sample.py in the project list to get started.
 
 **This module is developed under Python 3.6.8, before using this module, please put the teaodata folder under %PYTHONPATH%\Lib\site-packages.**
 ## multiple_process() function
