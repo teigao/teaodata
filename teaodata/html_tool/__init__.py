@@ -17,7 +17,7 @@ def _get_desktop():
     return winreg.QueryValueEx(key, "Desktop")[0]
 
 
-def create_html(content = "", result_saved_path=_get_desktop() + '\\result.html'):
+def create_html(content = "This is a sample page", result_saved_path=_get_desktop() + '\\result.html'):
     temp_html_file = open(result_saved_path,'w', encoding='UTF-8')
     temp_html_file.write(content)
     temp_html_file.close()
