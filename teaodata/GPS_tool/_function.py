@@ -7,11 +7,25 @@ def _angle_to_rad(angle):
     rad = angle * 3.14159265358979 / 180
     return rad
 
-def get_location(location_name):
-    request = requests.get('https://restapi.amap.com/v3/geocode/geo?key=1564ed3301b85f24f7a7c2c2295edf5e&address=' + location_name).json()
-    location_string = request.get('geocodes')[0].get('location').split(',')
-    location = [float(location_string[0]),float(location_string[1])]
-    return location
+
+def get_location(location_name="", city="", key='1564ed3301b85f24f7a7c2c2295edf5e'):
+    if location_name == "":
+        return "error: can't match"
+    else:
+        request = requests.get('https://restapi.amap.com/v3/geocode/geo?key=' +
+                               key + '&address=' + location_name + '&city=' + city).json()
+        geocodes = request.get('geocodes')
+        if geocodes == None:
+            return "error: this key is wrong"
+        else:
+            try:
+                location_string = geocodes[0].get('location').split(',')
+                location = [float(location_string[0]),
+                            float(location_string[1])]
+                return location
+            except:
+                return "error: can't match"
+
 
 def get_distance(location1, location2):
     """
